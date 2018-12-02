@@ -1,0 +1,26 @@
+{
+  "name": "Mailer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "react": "npm run start --prefix react/frontend",
+    "dev": "concurrently \"npm run server\" \"npm run react\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
+    "express": "^4.16.4",
+    "nodemailer": "^4.7.0",
+    "nodemailer-smtp-transport": "^2.7.4",
+    "nodemailer-wellknown": "^0.2.3",
+    "nodemon": "^1.18.7",
+    "sendmail": "^1.4.1"
+  }
+}
